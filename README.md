@@ -1,14 +1,43 @@
 # Discord Werewolf
 Discord Werewolf is a bot that runs the game Werewolf (Mafia) on Discord. It is written in Python using discord.py. You can find me on Discord as belungawhale#4813.
 
+## Testing
+
+Uses nox and pytest
+
 ## Setting the bot up
-Clone this repository. Rename `config.py.example` to `config.py` and `settings.py.example` to `settings.py`, and fill in the fields inside config.py. To change some gameplay-related settings, edit settings.py. This bot requires at least Python 3.5 to run.
+Clone this repository. Rename `config.py.example` to `config.py` and
+`settings.py.example` to `settings.py`, and fill in the fields inside config.py.
+To change some gameplay-related settings, edit settings.py. This bot requires at
+least Python 3.5 to run.
 
 ## Dependencies
-Discord Werewolf has hard dependencies on discord.py and aiohttp. You can run `pip install -r requirements.txt` to install the required dependencies.
+TODO: Switch to poetry
+This project uses poetry to manage dependencies and Nox to ensure environments
+rebuild for consistent test runs.
+
+Discord Werewolf has hard dependencies on discord.py and aiohttp.
+You can run `pip install -r requirements.txt` to install the required
+dependencies.
 
 ## Running the bot
-You must first create a new bot account at https://discordapp.com/developers/applications/me. Put the bot's token inside config.py. Next, add the bot to your server using the OAuth2 link `https://discordapp.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot&permissions=8` for faster setup or `https://discordapp.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot&permissions=268536848` for finer tuning of permissions, replacing CLIENT_ID with the client id. If you are running on Windows, run `python bot.py` or double-click run.bat to launch the auto-restarter (it will restart the bot if it crashes for whatever reason). If you are running on a UNIX-based system, run either `python3 bot.py` or `python3.5 bot.py`.
+You must first create a new bot account at
+`https://discordapp.com/developers/applications/me`.
+Put the bot's token inside config.py.
+
+Next, add the bot to your server using the OAuth2 link
+```
+https://discordapp.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot&permissions=8
+```
+for faster setup or
+```
+https://discordapp.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot&permissions=268536848
+```
+for finer tuning of permissions, replacing CLIENT_ID with the client id.
+If you are running on Windows, run `python bot.py` or double-click run.bat to
+launch the auto-restarter (it will restart the bot if it crashes for whatever
+reason). If you are running on a UNIX-based system, run either `python3 bot.py`
+or `python3.5 bot.py`.
 
 ## Changelog
 

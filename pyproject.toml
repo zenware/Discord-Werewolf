@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "discord-werewolf"
+version = "0.1.0"
+description = "Discord Bot that Allows Playing Werewolf"
+license = "MIT"
+authors = ["Jay Looney <jay.m.looney@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "^3.6.2"
+"discord.py" = "^1.3.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.1"
+flake8-docstrings = "^1.5.0"
+black = "^19.10b0"
+coverage = {extras = ["toml"], version = "^5.0.4"}
+pytest-cov = "^2.8.1"
+nox = "^2019.11.9"
+
+[tool.poetry.scripts]
+discord-werewolf = "werewolf.bot:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
